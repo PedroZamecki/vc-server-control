@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "vc-server-control",
+  "version": "${version}",
+  "name": "Voice Chat Server Control",
+  "description": "Better Configuration for Simple Voice Chat",
+  "authors": [
+    "Zamecki"
+  ],
+  "contact": {
+    "repo": "https://github.com/pedroZamecki/vc-server-control"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/vc-server-control/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "org.zamecki.vcservercontrol.client.VoiceChatServerControlClient"
+    ],
+    "main": [
+      "org.zamecki.vcservercontrol.VoiceChatServerControl"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
